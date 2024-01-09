@@ -10,7 +10,7 @@
         </p>
         <p class="text-regularLarge"><b>Let us know</b>, what other pages yo would like to see.</p>
       </div>
-      <div class="bg-[url('/landing/admin/open_source2.png')] md:bg-[url('/landing/admin/open_source.png')] bg-cover bg-center w-[320px] md:w-[498px] h-[432px] md:h-[468px]" />
+      <div class="bg-[url('/landing/admin/open_source2.png')] md:bg-[url('/landing/admin/open_source.png')] bg-cover bg-center w-screen max-w-[405px] md:max-w-[498px] h-[432px] md:h-[468px]" />
     </div>
   </div>
 </template>
