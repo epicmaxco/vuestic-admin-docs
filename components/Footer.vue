@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="flex flex-col md:flex-row w-full gap-4 md:gap-0 md:items-center justify-between rounded-lg bg-[#6F67D9] p-6">
-        <p class="text-white">3 Vue.js experts available in March to build and launch you product. <span class="text-[#FF0] font-semibold">Contact us</span></p>
+        <p class="text-white text-regularMedium">3 Vue.js experts available in March to build and launch you product. <span class="text-[#FF0] font-semibold">Contact us</span></p>
         <IconsEpicmaxLogo />
       </div>
       <div class="flex flex-col md:flex-row justify-center gap-6 md:gap-10 text-[#154EC1]">
