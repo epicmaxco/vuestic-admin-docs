@@ -2,29 +2,27 @@
   <footer class="flex justify-center pt-10 md:pt-[120px] pb-10">
     <div class="flex flex-col items-center gap-10 w-full max-w-7xl">
       <div class="flex justify-between text-regularMedium w-full">
-        <div class="flex flex-col md:flex-row w-full justify-around max-w-[132px] md:max-w-7xl">
-          <div class="flex flex-col gap-3">
+        <div class="grid grid-cols-2 md:grid-cols-4 w-full gap-6">
+          <div class="flex flex-col gap-3 order-1">
             <b>Resources</b>
             <p>Design Resources</p>
             <p>Icon Library</p>
             <p>Third-Party Libraries</p>
           </div>
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 order-3 md:order-2">
             <b>Help</b>
             <p>Common Issues</p>
             <p>Change Log</p>
             <p>Report Bug</p>
           </div>
-        </div>
-        <div class="flex flex-col md:flex-row w-full justify-around max-w-[132px] md:max-w-7xl">
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 order-2 md:order-3">
             <b>Community</b>
             <p>GitHub</p>
             <p>Discord</p>
             <p>Facebook</p>
             <p>Twitter</p>
           </div>
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 order-4">
             <b>Contact Us</b>
             <p>Write Us</p>
             <p>Join Us</p>
