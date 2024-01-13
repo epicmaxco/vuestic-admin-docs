@@ -6,18 +6,22 @@
         <div class="flex flex-col gap-8 md:gap-6">
           <p class="text-regularLarge text-center">We use UI components from Vuestic UI, which helps with updates and ensures consistent design.</p>
           <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-            <VaButton to="https://github.com/epicmaxco/vuestic-admin">
-              <template #prepend>
-                <IconsGithub color="textInverted"/>
-              </template>
-              <p class="text-regularLarge font-semibold ml-[10px]">View on GitHub</p>
-            </VaButton>
-            <VaButton preset="plain">
-              <p class="text-regularLarge">Live Demo</p>
-            </VaButton>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-fit">
+              <VaButton class="w-full sm:w-fit" to="https://github.com/epicmaxco/vuestic-admin" target="_blank">
+                <template #prepend>
+                  <IconsGithub color="textInverted"/>
+                </template>
+                <p class="text-regularLarge font-semibold ml-[10px]">View on GitHub</p>
+              </VaButton>
+              <VaButton class="w-full sm:w-fit" preset="plain" target="_blank">
+                <p class="text-regularLarge">Live Demo</p>
+              </VaButton>
+            </div>
             <div class="md:hidden" />
-            <GithubStars :count="stars" />
-            <GithubForks :count="forks" />
+            <div class="flex flex-col items-center sm:flex-row gap-4">
+              <GithubStars :count="stars" />
+              <GithubForks :count="forks" />
+            </div>
           </div>
         </div>
       </div>

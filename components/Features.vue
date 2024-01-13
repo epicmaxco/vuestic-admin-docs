@@ -5,7 +5,7 @@
       <div class="text-regularLarge max-w-[640px]">
         A robust admin template utilizing Vue 3, Vite, Pinia, and Tailwind CSS. It's a modern, MIT-licensed template designed for building efficient, responsive, and fast-loading admin interfaces. Tailored to speed up development, Vuestic Admin integrates the latest web technologies for a seamless experience.
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
         <div class="flex flex-col gap-4 md:gap-8">
           <div class="flex flex-col gap-4">
             <IconsStar />

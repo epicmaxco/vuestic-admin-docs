@@ -13,10 +13,21 @@ export default defineNuxtConfig({
 
   vuestic: {
     config: {
-      // Vuestic config here
-    }
+      breakpoint: {
+        bodyClass: false,
+        thresholds: {
+          xs: 0,
+          sm: 640,
+          md: 1108,
+          lg: 1440,
+          xl: 1920,
+        },
+      },
+    },
+
+    css: ['typography'],
   },
-    
+
   postcss: {
     plugins: {
       tailwindcss: {},

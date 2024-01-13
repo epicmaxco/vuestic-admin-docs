@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col md:flex-row justify-center items-center gap-9 md:gap-6 mt-[60px] md:mt-20">
-    <div class="flex flex-col justify-center gap-8">
-      <h1 class="text-4xl md:text-6xl font-extrabold text-center md:text-start max-w-[288px] md:max-w-[483px]">Vue 3 Admin Template</h1>
-      <div class="flex flex-col md:flex-row items-center gap-4">
-        <VaButton class="w-fit">
+    <div class="flex flex-col justify-center items-center gap-8 w-full max-w-[483px]">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-center md:text-start">Vue 3 Admin Template</h1>
+      <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start  gap-4 w-full">
+        <VaButton class="w-full sm:w-fit" to="https://github.com/epicmaxco/vuestic-admin#installation" target="_blank">
           <p class="text-regularLarge font-semibold">Get started</p>
         </VaButton>
-        <VaButton class="w-fit" preset="plain" to="https://github.com/epicmaxco/vuestic-admin">
+        <VaButton class="w-full sm:w-fit" preset="plain" to="https://github.com/epicmaxco/vuestic-admin" target="_blank">
           <template #prepend>
             <IconsGithub />
           </template>
