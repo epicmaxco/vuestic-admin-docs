@@ -20,13 +20,13 @@
         <div class="flex flex-col gap-4 max-w-[510px]">
           <h2 class="text-extraSmall font-bold">For Open Source Product Owners</h2>
           <p class="text-regularLarge">
-            We are open to collaboration. If you see opportunities for some integration with your product or to work together in some way, we are at your service. Write to us at <b><u>hello@epicmax.co</u></b>
+            We are open to collaboration. If you see opportunities for some integration with your product or to work together in some way, we are at your service. Write to us at <NuxtLink to="mailto:hello@epicmax.co"><b><u>hello@epicmax.co</u></b></NuxtLink>
           </p>
         </div>
         <div class="flex flex-col gap-4 max-w-[510px]">
           <h2 class="text-extraSmall font-bold">For Commercial Projects</h2>
           <p class="text-regularLarge">
-            If you want to order a consultation from our top developers, for us to audit your frontend code, or if you need custom solution development using any JavaScript-related framework, we are at your service. Learn more at <b><u>epicmax.co</u></b>
+            If you want to order a consultation from our top developers, for us to audit your frontend code, or if you need custom solution development using any JavaScript-related framework, we are at your service. Learn more at <NuxtLink to="https://epicmax.co/" target="_blank"><b><u>epicmax.co</u></b></NuxtLink>
           </p>
         </div>
       </div>

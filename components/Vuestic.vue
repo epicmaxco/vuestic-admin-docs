@@ -7,13 +7,13 @@
           <p class="text-regularLarge text-center">We use UI components from Vuestic UI, which helps with updates and ensures consistent design.</p>
           <div class="flex flex-col md:flex-row items-center justify-center gap-4">
             <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-fit">
-              <VaButton class="w-full sm:w-fit" to="https://github.com/epicmaxco/vuestic-admin" target="_blank">
+              <VaButton class="w-full sm:w-fit" to="https://github.com/epicmaxco/vuestic-ui" target="_blank">
                 <template #prepend>
                   <IconsGithub color="textInverted"/>
                 </template>
                 <p class="text-regularLarge font-semibold ml-[10px]">View on GitHub</p>
               </VaButton>
-              <VaButton class="w-full sm:w-fit" preset="plain" target="_blank">
+              <VaButton class="w-full sm:w-fit" preset="plain" to="https://ui.vuestic.dev" target="_blank">
                 <p class="text-regularLarge">Live Demo</p>
               </VaButton>
             </div>
@@ -34,10 +34,22 @@
 const stars = ref(0)
 const forks = ref(0)
 
-onMounted(async () => {
-  const { stargazers_count, forks: forks_count } = await $fetch<{ stargazers_count: number, forks: number }>('https://api.github.com/repos/epicmaxco/vuestic-ui')
+onMounted(() => {
+  const fetchMeta = async () => {
+    const { stargazers_count, forks: forks_count } = await $fetch<{ stargazers_count: number, forks: number }>('https://api.github.com/repos/epicmaxco/vuestic-ui')
 
-  stars.value = stargazers_count
-  forks.value = forks_count
+    sessionStorage.setItem('stars', JSON.stringify(stargazers_count)) 
+    sessionStorage.setItem('forks', JSON.stringify(forks_count))
+
+    stars.value = stargazers_count
+    forks.value = forks_count
+  }
+
+  if(!sessionStorage.getItem('stars') && !sessionStorage.getItem('forks')) {
+    fetchMeta()
+  } else {
+    stars.value = Number(sessionStorage.getItem('stars'))
+    forks.value = Number(sessionStorage.getItem('forks'))
+  }
 })
 </script>

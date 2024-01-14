@@ -3,7 +3,7 @@
     <div class="flex flex-col items-center gap-8 md:gap-10 w-full max-w-7xl">
       <h2 class="text-extraMedium md:text-extraLarge font-extrabold text-center">Customize Everything</h2>
       <p class="text-regularLarge text-center">Make Vuestic UI components match your designs with powerful dynamic configs.</p>
-      <VaButton class="w-full sm:w-fit">
+      <VaButton class="w-full sm:w-fit" to="https://ui.vuestic.dev/getting-started/configuration-guide" target="_blank">
         <p class="text-regularLarge">Learn how to configure</p>
       </VaButton>
     </div>
