@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="flex justify-center -mx-4 sm:mx-0 pb-10 md:pb-[120px] pt-8 md:pt-10">
-    <div class="flex justify-center w-full max-w-[1168px] min-h-[100px] md:px-6">
+    <div class="flex justify-center w-full max-w-[1168px] min-h-[100px]">
       <img class="object-cover object-left" src="/landing/admin/costumize.png" alt="costumize"/>
     </div>
   </div>
