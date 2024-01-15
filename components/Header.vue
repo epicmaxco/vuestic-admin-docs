@@ -41,17 +41,17 @@
       </VaButton>
       <div class="flex justify-center mt-14 gap-6">
         <NuxtLink to="https://github.com/epicmaxco/vuestic-admin" target="_blank">
-            <IconsGithub class="w-8 h-8" />
-          </NuxtLink>
-          <NuxtLink to="https://discord.gg/invite/u7fQdqQt8c" target="_blank">
-            <IconsDiscord class="w-8 h-8" />
-          </NuxtLink>
-          <NuxtLink href="https://www.facebook.com/epicmaxco" target="_blank">
-            <IconsFacebook class="w-8 h-8" />
-          </NuxtLink>
-          <NuxtLink to="https://twitter.com/epicmaxco" target="_blank">
-            <IconsTwitter class="w-8 h-8" />
-          </NuxtLink>
+          <IconsGithub class="w-8 h-8" />
+        </NuxtLink>
+        <NuxtLink to="https://discord.gg/invite/u7fQdqQt8c" target="_blank">
+          <IconsDiscord class="w-8 h-8" />
+        </NuxtLink>
+        <NuxtLink href="https://www.facebook.com/epicmaxco" target="_blank">
+          <IconsFacebook class="w-8 h-8" />
+        </NuxtLink>
+        <NuxtLink to="https://twitter.com/epicmaxco" target="_blank">
+          <IconsTwitter class="w-8 h-8" />
+        </NuxtLink>
       </div>
     </div>
   </nav>

@@ -34,17 +34,17 @@
 const stars = ref(0)
 const forks = ref(0)
 
+const fetchMeta = async () => {
+  const { stargazers_count, forks: forks_count } = await $fetch<{ stargazers_count: number, forks: number }>('https://api.github.com/repos/epicmaxco/vuestic-ui')
+
+  sessionStorage.setItem('stars', JSON.stringify(stargazers_count)) 
+  sessionStorage.setItem('forks', JSON.stringify(forks_count))
+
+  stars.value = stargazers_count
+  forks.value = forks_count
+}
+
 onMounted(() => {
-  const fetchMeta = async () => {
-    const { stargazers_count, forks: forks_count } = await $fetch<{ stargazers_count: number, forks: number }>('https://api.github.com/repos/epicmaxco/vuestic-ui')
-
-    sessionStorage.setItem('stars', JSON.stringify(stargazers_count)) 
-    sessionStorage.setItem('forks', JSON.stringify(forks_count))
-
-    stars.value = stargazers_count
-    forks.value = forks_count
-  }
-
   if(!sessionStorage.getItem('stars') && !sessionStorage.getItem('forks')) {
     fetchMeta()
   } else {
