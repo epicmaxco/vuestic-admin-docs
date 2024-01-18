@@ -6,8 +6,8 @@
       </div>
       <div class="flex-1">
         <VaButton 
-          href="https://epicmax.co/?ref=vuestic-header" 
-          target="blank" 
+          to="https://epicmax.co/?ref=vuestic-header" 
+          target="_blank" 
           class="text-regularSmall" 
           size="small" 
           color="#FF0" 

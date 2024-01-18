@@ -17,10 +17,10 @@
           </div>
           <div class="flex flex-col gap-3 order-2 md:order-3">
             <b>Community</b>
-            <NuxtLink class="hover:underline" to="https://github.com/epicmaxco/vuestic-admin" target="_blank">GitHub</NuxtLink>
-            <NuxtLink class="hover:underline" to="https://discord.gg/invite/u7fQdqQt8c" target="_blank">Discord</NuxtLink>
-            <NuxtLink class="hover:underline" to="https://www.facebook.com/epicmaxco" target="_blank">Facebook</NuxtLink>
-            <NuxtLink class="hover:underline" to="https://twitter.com/epicmaxco" target="_blank">Twitter</NuxtLink>
+            <NuxtLink class="hover:underline w-fit" to="https://github.com/epicmaxco/vuestic-admin" target="_blank">GitHub</NuxtLink>
+            <NuxtLink class="hover:underline w-fit" to="https://discord.gg/invite/u7fQdqQt8c" target="_blank">Discord</NuxtLink>
+            <NuxtLink class="hover:underline w-fit" to="https://www.facebook.com/epicmaxco" target="_blank">Facebook</NuxtLink>
+            <NuxtLink class="hover:underline w-fit" to="https://twitter.com/epicmaxco" target="_blank">Twitter</NuxtLink>
           </div>
           <div class="flex flex-col gap-3 order-4">
             <b>Contact Us</b>
