@@ -1,7 +1,7 @@
 <template>
-  <HeaderBanner />
+  <HeaderBanner v-model="isHeaderBannerOpen" />
   <section class="relative bg-gradient-to-b from-[#E5E3FF] to-[#F9F4F7] px-4 sm:px-6 md:px-0">
-    <Header v-model="isMobileMenuOpen" />
+    <Header v-model="isMobileMenuOpen" :isHeaderBannerOpen="isHeaderBannerOpen" />
     <template v-if="!isMobileMenuOpen">
       <Preview />
       <Partners />
@@ -34,6 +34,7 @@
 
 <script setup lang="ts">
 const isMobileMenuOpen = ref(false)
+const isHeaderBannerOpen = ref(true)
 
 const breakpoint = useBreakpoint()
 
@@ -45,10 +46,6 @@ watch(breakpoint, () => {
 </script>
 
 <style lang="scss">
-html {
-  background-color: white;
-}
-
 :root {
   --va-font-family: 'Inter';
   --va-button-content-py: 10px;

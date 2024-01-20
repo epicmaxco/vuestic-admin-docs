@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center py-10 md:py-[120px]">
     <div class="flex flex-col items-center gap-10 w-full max-w-7xl">
-      <h2 class="text-extraMedium md:text-extraLarge font-extrabold text-center">Our customers tell</h2>
+      <h2 class="text-extraMedium md:text-extraLarge font-extrabold text-center">Community Feedback</h2>
       <div class="flex flex-col md:flex-row gap-4 md:gap-6">
         <div class="flex flex-col gap-4 md:gap-6">
           <img src="/landing/adminImages/madewithvue.png" alt="madewithvuejs">
