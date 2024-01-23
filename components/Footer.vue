@@ -19,18 +19,18 @@
             <b>Community</b>
             <NuxtLink class="hover:underline w-fit" to="https://github.com/epicmaxco/vuestic-admin" target="_blank">GitHub</NuxtLink>
             <NuxtLink class="hover:underline w-fit" to="https://discord.gg/invite/u7fQdqQt8c" target="_blank">Discord</NuxtLink>
-            <NuxtLink class="hover:underline w-fit" to="https://www.facebook.com/epicmaxco" target="_blank">Facebook</NuxtLink>
-            <NuxtLink class="hover:underline w-fit" to="https://twitter.com/epicmaxco" target="_blank">Twitter</NuxtLink>
+            <NuxtLink class="hover:underline w-fit" to="https://twitter.com/vuestic_ui" target="_blank">Twitter</NuxtLink>
           </div>
           <div class="flex flex-col gap-3 order-4">
             <b>Contact Us</b>
-            <p>Write Us</p>
-            <p>Join Us</p>
+            <NuxtLink class="hover:underline w-fit" to="https://ui.vuestic.dev/contribution/guide" target="_blank">Contribute</NuxtLink>
+            <NuxtLink class="hover:underline w-fit" to="mailto:vuestic@epicmax.co">Write Us</NuxtLink>
+            <NuxtLink class="hover:underline w-fit" to="https://discord.gg/invite/u7fQdqQt8c" target="_blank">Join Us</NuxtLink>
           </div>
         </div>
       </div>
       <div class="flex flex-col sm:flex-row w-full gap-4 md:gap-0 md:items-center justify-between rounded-lg bg-[#6F67D9] p-6">
-        <p class="text-white text-regularMedium">3 Vue.js experts available in March to build and launch you product. <NuxtLink to="mailto:hello@epicmax.co" class="text-[#FF0] font-semibold">Contact us</NuxtLink></p>
+        <p class="text-white text-regularMedium">3 Vue.js experts available to build and launch your product. <NuxtLink to="mailto:vuestic@epicmax.co" target="_blank" class="text-[#FF0] font-semibold">Contact us</NuxtLink></p>
         <NuxtLink to="https://epicmax.co/" target="_blank">
           <IconsEpicmaxLogo />
         </NuxtLink>
@@ -62,14 +62,11 @@
         <NuxtLink to="https://discord.gg/invite/u7fQdqQt8c" target="_blank">
           <IconsDiscord />
         </NuxtLink>
-        <NuxtLink href="https://www.facebook.com/epicmaxco" target="_blank">
-          <IconsFacebook />
-        </NuxtLink>
-        <NuxtLink to="https://twitter.com/epicmaxco" target="_blank">
+        <NuxtLink to="https://twitter.com/vuestic_ui" target="_blank">
           <IconsTwitter />
         </NuxtLink>
       </div>
-      <p class="text-regularMedium text-center">© 2023 Vuestic UI. Open source, free yo use. Development inquiries: <NuxtLink to="mailto:hello@epicmax.co" class="text-primary font-semibold">hello@epicmax.co</NuxtLink></p>
+      <p class="text-regularMedium text-center">© 2024 Vuestic Admin. Open source, free to use. Development inquiries: <NuxtLink to="mailto:vuestic@epicmax.co" class="text-primary font-semibold">vuestic@epicmax.co</NuxtLink></p>
     </div>
   </footer>
 </template>

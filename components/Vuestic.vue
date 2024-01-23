@@ -7,14 +7,14 @@
           <p class="text-regularLarge text-center">We use UI components from Vuestic UI, which helps with updates and ensures consistent design.</p>
           <div class="flex flex-col md:flex-row items-center justify-center gap-4">
             <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-fit">
-              <VaButton class="w-full sm:w-fit" to="https://github.com/epicmaxco/vuestic-ui" target="_blank">
+              <VaButton class="w-full sm:w-fit" to="https://ui.vuestic.dev" target="_blank">
+                <p class="text-regularLarge">Live Demo</p>
+              </VaButton>
+              <VaButton class="w-full sm:w-fit" preset="plain" to="https://github.com/epicmaxco/vuestic-ui" target="_blank">
                 <template #prepend>
-                  <IconsGithub color="textInverted"/>
+                  <IconsGithub />
                 </template>
                 <p class="text-regularLarge font-semibold ml-[10px]">View on GitHub</p>
-              </VaButton>
-              <VaButton class="w-full sm:w-fit" preset="plain" to="https://ui.vuestic.dev" target="_blank">
-                <p class="text-regularLarge">Live Demo</p>
               </VaButton>
             </div>
             <div class="md:hidden" />
