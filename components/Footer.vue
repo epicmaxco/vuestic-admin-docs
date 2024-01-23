@@ -2,26 +2,19 @@
   <footer class="flex justify-center pt-10 md:pt-[120px] pb-10">
     <div class="flex flex-col items-center gap-10 w-full max-w-7xl">
       <div class="flex justify-between text-regularMedium w-full">
-        <div class="grid grid-cols-2 md:grid-cols-4 w-full gap-6">
-          <div class="flex flex-col gap-3 order-1">
-            <b>Resources</b>
-            <p>Design Resources</p>
-            <p>Icon Library</p>
-            <p>Third-Party Libraries</p>
-          </div>
-          <div class="flex flex-col gap-3 order-3 md:order-2">
+        <div class="grid grid-cols-2 md:grid-cols-3 w-full gap-6">
+          <div class="flex flex-col gap-3 order-3 md:order-1">
             <b>Help</b>
-            <p>Common Issues</p>
-            <p>Change Log</p>
-            <p>Report Bug</p>
+            <NuxtLink class="hover:underline w-fit" to="https://github.com/epicmaxco/vuestic-admin/releases/epicmaxco/vuestic-admin" target="_blank">Report a Bug</NuxtLink>
+            <NuxtLink class="hover:underline w-fit" to="https://github.com/epicmaxco/vuestic-admin/releases/vuestic-admin/releases/epicmaxco/vuestic-admin" target="_blank">Release Log</NuxtLink>
           </div>
-          <div class="flex flex-col gap-3 order-2 md:order-3">
+          <div class="flex flex-col gap-3 order-2 md:order-2">
             <b>Community</b>
             <NuxtLink class="hover:underline w-fit" to="https://github.com/epicmaxco/vuestic-admin" target="_blank">GitHub</NuxtLink>
             <NuxtLink class="hover:underline w-fit" to="https://discord.gg/invite/u7fQdqQt8c" target="_blank">Discord</NuxtLink>
             <NuxtLink class="hover:underline w-fit" to="https://twitter.com/vuestic_ui" target="_blank">Twitter</NuxtLink>
           </div>
-          <div class="flex flex-col gap-3 order-4">
+          <div class="flex flex-col gap-3 order-3">
             <b>Contact Us</b>
             <NuxtLink class="hover:underline w-fit" to="https://ui.vuestic.dev/contribution/guide" target="_blank">Contribute</NuxtLink>
             <NuxtLink class="hover:underline w-fit" to="mailto:vuestic@epicmax.co">Write Us</NuxtLink>
@@ -70,3 +63,5 @@
     </div>
   </footer>
 </template>
+<script setup lang="ts">
+</script>
