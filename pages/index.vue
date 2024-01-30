@@ -4,7 +4,7 @@
     <Header v-model="isMobileMenuOpen" :isHeaderBannerOpen="isHeaderBannerOpen" />
     <template v-if="!isMobileMenuOpen">
       <Preview />
-      <Partners />
+      <PartnersList />
     </template>
   </section>
   <template v-if="!isMobileMenuOpen">
