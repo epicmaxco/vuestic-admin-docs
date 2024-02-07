@@ -14,18 +14,6 @@
       Our beloved partners & sponsors that support us
     </p>
   </div>
-  <div class="flex flex-col gap-4 items-center pt-4 pb-10 md:pb-8 mt-[60px] md:mt-20 opacity-60">
-    <div class="grid grid-cols-3 sm:grid-cols-4 gap-y-4 gap-x-4 md:flex md:flex-wrap items-center justify-between w-full max-w-7xl">
-      <div v-for="partner in partners" :key="partner.url" class="md:flex-1">
-        <NuxtLink :to="partner.url" target="_blank">
-          <component :is="partner.component" class="w-full h-[30px]" />
-        </NuxtLink>
-      </div>
-    </div>
-    <p class="text-regularLarge text-[#474198] text-center">
-      Our beloved partners & sponsors that support us
-    </p>
-  </div>
 </template>
 
 <script setup lang="ts">
@@ -61,6 +49,14 @@ const partners: {url: string, component: any}[] = [
   {
     url: "https://flatlogic.com/?utm_source=partners&utm_medium=logo&utm_campaign=vuestic",
     component: resolveComponent('PartnersIconsFlatLogic')
+  },
+  {
+    url: "https://vuejsnation.com/?utm_medium=TWITTER&utm_source=VuesticUI&utm_content=VN2024_recruitment&utm_campaign=community",
+    component: resolveComponent('PartnersIconsVueJsNation')
+  },
+  {
+    url: "https://vueschool.io/?utm_medium=TWITTER&utm_source=VuesticUI&utm_content=VN2024_recruitment&utm_campaign=community",
+    component: resolveComponent('PartnersIconsVueSchool')
   }
 ];
 </script>
