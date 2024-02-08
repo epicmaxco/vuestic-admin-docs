@@ -1,8 +1,6 @@
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="155"
-    height="23"
     :viewBox="viewBox"
     fill="none"
   >
@@ -75,5 +73,5 @@ const props = defineProps({
   },
 })
 
-const {viewBox, colorComputed} = useSponsorIcon(props.color, 155, 23, 0.8)
+const {viewBox, colorComputed} = useSponsorIcon(props.color, 155, 23)
 </script>
