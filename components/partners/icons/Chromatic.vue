@@ -16,5 +16,5 @@ const props = defineProps({
   },
 })
 
-const {viewBox, colorComputed} = useSponsorIcon(props.color, 120, 24, 0.9)
+const {viewBox, colorComputed} = useSponsorIcon(props.color, 120, 24)
 </script>

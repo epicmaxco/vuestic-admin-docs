@@ -1,4 +1,3 @@
-// useViewBox.ts
 import { computed } from 'vue';
 
 export const useSponsorIcon = (color: string, width: number, height: number, scale = 1) => {

@@ -1,62 +1,136 @@
+<script setup lang="ts">
+  import Chromatic from './icons/Chromatic.vue';
+  import VueJsNation from './icons/VueJsNation.vue';
+  import VueSchool from './icons/VueSchool.vue';
+  import JetBrains from './icons/JetBrains.vue';
+  import Epicmax from './icons/Epicmax.vue';
+  import VueJobs from './icons/VueJobs.vue';
+  import CodeSandbox from './icons/CodeSandbox.vue';
+  import AGGrid from './icons/AGGrid.vue';
+  import VueForge from './icons/VueForge.vue';
+  import FlatLogic from './icons/FlatLogic.vue';
+
+  const iconsColor = '#474198'
+  const baseHeight = 22
+</script>
+
 <template>
   <div class="flex flex-col gap-4 items-center pt-4 pb-10 md:pb-8 mt-[60px] md:mt-20 opacity-60">
-    <!-- Increased gap-y for vertical and added gap-x for horizontal spacing -->
-    <div class="grid grid-cols-3 sm:grid-cols-4 gap-y-4 gap-x-4 md:flex items-center justify-between w-full max-w-7xl">
-      <NuxtLink
-          v-for="partner in partners"
-          :to="partner.url"
-          target="_blank"
+    <div class="flex items-center justify-center lg:justify-between w-full max-w-7xl gap-8 md:gap-4 mb-4 flex-wrap">
+      <a
+        href="https://epicmax.co/"
+        target="_blank"
+        title="Epicmax - Top Vue.js Development Company"
       >
-        <component :is="partner.component" class="w-full h-[30px]" />
-      </NuxtLink>
+        <Epicmax
+          :height="baseHeight * 0.6"
+          :color="iconsColor"
+        />
+      </a>
+      
+      <a
+        href="https://vuejobs.com/"
+        target="_blank"
+        title="Vue.js jobs – Browse through dozens of Vue.js openings"
+        class="partners__logo logo__vue-jobs"
+      >
+        <VueJobs
+          :height="24"
+          :color="iconsColor"
+        />
+      </a>
+
+      <a
+        href="https://www.jetbrains.com/?utm_source=Epicmax&utm_medium=partners_logo&utm_campaign=vuestic"
+        target="_blank"
+        title="JetBrains - The Capable and Ergonomic IDE for JVM"
+        class="partners__logo logo__vue-jobs"
+      >
+        <JetBrains 
+          :height="24"
+          :color="iconsColor"
+        />
+      </a>
+
+      <a
+        href="https://codesandbox.io/?utm_source=Epicmax&utm_medium=partners_logo&utm_campaign=vuestic"
+        target="_blank"
+        title="CodeSandbox - An online editor tailored for web applications"
+      >
+        <CodeSandbox 
+          :height="baseHeight * 1.1"
+          :color="iconsColor"
+        />
+      </a>
+
+      <a
+        href="https://www.ag-grid.com/"
+        target="_blank"
+        title="Data Grid: AG Grid: High-Performance React Grid, Angular Grid, JavaScript Grid"
+      >
+        <AGGrid 
+          :height="baseHeight * 0.9"
+          :color="iconsColor"
+        />
+      </a>
+
+      <a
+        href="https://vuejsforge.com/?utm_source=Epicmax&utm_medium=partners_logo&utm_campaign=vuestic/"
+        target="_blank"
+        title="Vue.js Forge - The largest hands-on Vue.js Event"
+      >
+        <VueForge
+          :height="baseHeight * 0.8"
+          :color="iconsColor"
+        />
+      </a>
+
+      <a
+        href="https://chromatic.com/?utm_source=github&utm_medium=profile&utm_campaign=vuestic"
+        target="_blank"
+        title="Chromatic - Storybook deployment, review, and test"
+      >
+        <Chromatic 
+          :height="baseHeight * 0.9"
+          :color="iconsColor"
+        />
+      </a>
+
+      <a
+        href="https://flatlogic.com/"
+        target="_blank"
+        title="Flatlogic - The best way to create React, Angular and Vue full-stack web applications"
+      >
+        <FlatLogic 
+          :height="baseHeight * 0.8"
+          :color="iconsColor"
+        />
+      </a>
+
+      <a
+        href="https://vuejsnation.com/?utm_medium=TWITTER&utm_source=VuesticUI&utm_content=VN2024_recruitment&utm_campaign=community"
+        target="_blank"
+        title="Vue.js Nation - The largest and only 100% FREE Vue.js conference in the world"
+      >
+        <VueJsNation 
+          :height="24 * 0.8"
+          :color="iconsColor"
+        />
+      </a>
+
+      <a
+        href="https://vueschool.io/?utm_medium=TWITTER&utm_source=VuesticUI&utm_content=VN2024_recruitment&utm_campaign=community"
+        target="_blank"
+        title="Vue School"
+      >
+        <VueSchool 
+          :height="24 * 1"
+          :color="iconsColor"
+        />
+      </a>
     </div>
     <p class="text-regularLarge text-[#474198] text-center">
-      Our beloved partners & sponsors that support us
+      Our beloved Partners & Sponsors that support us ❤️
     </p>
   </div>
 </template>
-
-<script setup lang="ts">
-const partners: {url: string, component: any}[] = [
-  {
-    url: "https://epicmax.co/?utm_source=partners&utm_medium=logo&utm_campaign=vuestic",
-    component: resolveComponent('PartnersIconsEpicmax')
-  },
-  {
-    url: "https://vuejobs.com/?utm_source=partners&utm_medium=logo&utm_campaign=vuestic",
-    component: resolveComponent('PartnersIconsVueJobs')
-  },
-  {
-    url: "https://www.jetbrains.com/?utm_source=Epicmax&utm_medium=partners_logo&utm_campaign=vuestic",
-    component: resolveComponent('PartnersIconsJetBrains')
-  },
-  {
-    url: "https://codesandbox.io/?utm_source=Epicmax&utm_medium=partners_logo&utm_campaign=vuestic",
-    component: resolveComponent('PartnersIconsCodeSandbox')
-  },
-  {
-    url: "https://www.ag-grid.com/?utm_source=partners&utm_medium=logo&utm_campaign=vuestic",
-    component: resolveComponent('PartnersIconsAGGrid')
-  },
-  {
-    url: "https://vuejsforge.com/?utm_source=Epicmax&utm_medium=partners_logo&utm_campaign=vuestic/",
-    component: resolveComponent('PartnersIconsVueForge')
-  },
-  {
-    url: "https://chromatic.com/?utm_source=github&utm_medium=profile&utm_campaign=vuestic",
-    component: resolveComponent('PartnersIconsChromatic')
-  },
-  {
-    url: "https://flatlogic.com/?utm_source=partners&utm_medium=logo&utm_campaign=vuestic",
-    component: resolveComponent('PartnersIconsFlatLogic')
-  },
-  {
-    url: "https://vuejsnation.com/?utm_medium=TWITTER&utm_source=VuesticUI&utm_content=VN2024_recruitment&utm_campaign=community",
-    component: resolveComponent('PartnersIconsVueJsNation')
-  },
-  {
-    url: "https://vueschool.io/?utm_medium=TWITTER&utm_source=VuesticUI&utm_content=VN2024_recruitment&utm_campaign=community",
-    component: resolveComponent('PartnersIconsVueSchool')
-  }
-];
-</script>
