@@ -35,7 +35,7 @@
             <p class="font-bold">About Epicmax</p>
           </div>
         </VaButton>
-        <VaButton preset="plain" to="https://admin.vuestic.dev/" target="_blank">
+        <VaButton preset="plain" to="https://admin-demo.vuestic.dev/" target="_blank">
           <div class="flex gap-2 items-center">
             <IconsVuesticAdmin />
             <p class="font-bold">Vuestic Admin</p>

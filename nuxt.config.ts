@@ -55,7 +55,7 @@ export default defineNuxtConfig({
         {
           vmid: 'twitter:domain',
           property: 'twitter:domain',
-          content: 'https://admin.vuestic.dev/admin/dashboard'
+          content: 'https://admin-demo.vuestic.dev/dashboard'
         },
         {
           vmid: 'twitter:site',
@@ -105,7 +105,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   ssr: true,
-  
+
   nitro: {
     compressPublicAssets: true,
   },
