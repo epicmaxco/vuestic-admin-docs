@@ -12,6 +12,7 @@
   "devDependencies": {
     "@vuestic/nuxt": "^1.0.18",
     "@vuestic/tailwind": "^0.1.4",
+    "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
     "autoprefixer": "^10.4.16",
     "nuxt": "^3.9.0",
     "postcss": "^8.4.33",

@@ -68,7 +68,8 @@ export default defineNuxtConfig({
 
   modules: [
     '@vuestic/nuxt',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@zadigetvoltaire/nuxt-gtm'
   ],
 
   googleFonts: {
@@ -109,4 +110,9 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
   },
+
+  gtm: {
+    id: process.env.NUXT_GTM_KEY,
+    enabled: process.env.NUXT_GTM_ENABLED,
+  }
 })
