@@ -18,7 +18,7 @@
   <div class="flex flex-col gap-4 items-center pt-4 pb-10 md:pb-8 mt-[60px] md:mt-20 opacity-60">
     <div class="flex items-center justify-center lg:justify-between w-full max-w-7xl gap-8 md:gap-4 mb-4 flex-wrap">
       <a
-        href="https://epicmax.co/"
+        href="https://www.epicmax.co/?utm_source=vuestic_admin&utm_medium=landing&utm_campaign=logo"
         target="_blank"
         title="Epicmax - Top Vue.js Development Company"
       >
@@ -27,9 +27,9 @@
           :color="iconsColor"
         />
       </a>
-      
+
       <a
-        href="https://vuejobs.com/"
+        href="https://vuejobs.com/?utm_source=vuestic_admin&utm_medium=landing&utm_campaign=logo"
         target="_blank"
         title="Vue.js jobs – Browse through dozens of Vue.js openings"
         class="partners__logo logo__vue-jobs"
@@ -46,7 +46,7 @@
         title="JetBrains - The Capable and Ergonomic IDE for JVM"
         class="partners__logo logo__vue-jobs"
       >
-        <JetBrains 
+        <JetBrains
           :height="24"
           :color="iconsColor"
         />
@@ -57,18 +57,18 @@
         target="_blank"
         title="CodeSandbox - An online editor tailored for web applications"
       >
-        <CodeSandbox 
+        <CodeSandbox
           :height="baseHeight * 1.1"
           :color="iconsColor"
         />
       </a>
 
       <a
-        href="https://www.ag-grid.com/"
+        href="https://www.ag-grid.com/?utm_source=vuestic_admin&utm_medium=landing&utm_campaign=logo"
         target="_blank"
         title="Data Grid: AG Grid: High-Performance React Grid, Angular Grid, JavaScript Grid"
       >
-        <AGGrid 
+        <AGGrid
           :height="baseHeight * 0.9"
           :color="iconsColor"
         />
@@ -90,18 +90,18 @@
         target="_blank"
         title="Chromatic - Storybook deployment, review, and test"
       >
-        <Chromatic 
+        <Chromatic
           :height="baseHeight * 0.9"
           :color="iconsColor"
         />
       </a>
 
       <a
-        href="https://flatlogic.com/"
+        href="https://flatlogic.com/?utm_source=vuestic_admin&utm_medium=landing&utm_campaign=logo"
         target="_blank"
         title="Flatlogic - The best way to create React, Angular and Vue full-stack web applications"
       >
-        <FlatLogic 
+        <FlatLogic
           :height="baseHeight * 0.8"
           :color="iconsColor"
         />
@@ -112,7 +112,7 @@
         target="_blank"
         title="Vue.js Nation - The largest and only 100% FREE Vue.js conference in the world"
       >
-        <VueJsNation 
+        <VueJsNation
           :height="24 * 0.8"
           :color="iconsColor"
         />
@@ -123,7 +123,7 @@
         target="_blank"
         title="Vue School"
       >
-        <VueSchool 
+        <VueSchool
           :height="24 * 1"
           :color="iconsColor"
         />
