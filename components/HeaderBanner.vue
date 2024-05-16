@@ -1,5 +1,5 @@
 <template>
-  <div v-if="modelValue" class="flex items-center gap-4 py-2 px-4 bg-[#6B62F0]">
+  <div v-if="modelValue" class="flex items-center gap-4 py-2 px-4 bg-[var(--bg-header)]">
     <div class="flex flex-1 flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-4">
       <div class="flex md:justify-end">
         <div class="text-regularMedium text-white justify-self-end">3 Vue.js experts available to build and launch your product</div>

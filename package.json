@@ -10,8 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@vuestic/nuxt": "^1.0.18",
-    "@vuestic/tailwind": "^0.1.4",
+    "@vuestic/nuxt": "^1.0.20",
+    "@vuestic/tailwind": "^0.1.5",
     "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
     "autoprefixer": "^10.4.16",
     "nuxt": "^3.9.0",
