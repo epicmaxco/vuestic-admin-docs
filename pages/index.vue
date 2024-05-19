@@ -32,27 +32,11 @@
     <section class="bg-gradient-to-b from-[#E5E3FFBA] from-[8.85%] to-[#F8F3F7] px-4 sm:px-6 md:px-0">
       <Footer />
     </section>
-    <LazyModalsRequestAuditModal v-if="needShowRequestAuditModal" @show="onRequestAuditModalShown" />
+    <LazyModalsRequestAuditModal v-if="needShowRequestAuditModal" v-model="showRequestAuditModal" @close="onRequestAuditModalShown" />
   </template>
 </template>
 
 <script setup lang="ts">
-import {getLocalStorage} from "~/utils/localStorage";
-
-const wasRequestAuditModalShownStorageKey = 'wasRequestAuditModalShown'
-
-const needShowRequestAuditModal = ref(false)
-
-onMounted(() => {
-  const localStorage = getLocalStorage()
-  needShowRequestAuditModal.value = Boolean(localStorage ? !localStorage.getItem(
-      wasRequestAuditModalShownStorageKey
-  ) : true);
-})
-
-const onRequestAuditModalShown = () => {
-  getLocalStorage()?.setItem(wasRequestAuditModalShownStorageKey, '1')
-}
 
 const isMobileMenuOpen = ref(false)
 const isHeaderBannerOpen = ref(true)
@@ -64,10 +48,13 @@ watch(breakpoint, () => {
     isMobileMenuOpen.value = false
   }
 })
+
+const { needShowRequestAuditModal, onRequestAuditModalShown, showRequestAuditModal } = useRequestAuditModal()
 </script>
 
 <style lang="scss">
 @import "@/assets/variables.scss";
+@import "@/assets/reset";
 
 :root {
   --va-font-family: 'Inter';

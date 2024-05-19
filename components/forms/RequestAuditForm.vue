@@ -26,11 +26,21 @@
         Got a Vue.js project and want to make it better? Provide us with some details about your project, and we'll get back to you within 24 hours.
       </p>
       <VaInput
-        v-model="email"
-        type="email"
-        placeholder="Email"
-        required
-        class="w-full mt-3"
+          v-model="email"
+          type="email"
+          placeholder="Email"
+          required
+          name="Email"
+          class="w-full mt-3"
+      />
+      <VaTextarea
+          v-model="description"
+          placeholder="Project link, tech stack, and details"
+          required
+          name="Field 3"
+          class="w-full mt-3"
+          :resize="false"
+          :max-rows="4"
       />
       <Recaptcha
         ref="recaptchaRef"
@@ -62,6 +72,7 @@ const FORM_URL  = 'https://webflow.com/api/v1/form/61eeb35ae9ff3aeddc164997'
 const RECAPTCHA_SITE_KEY = useRuntimeConfig().public.recaptchaKey
 
 const email = ref<string>('')
+const description = ref<string>('')
 const recaptchaToken = ref<string>();
 const recaptchaRef = ref<InstanceType<typeof Recaptcha>>();
 
@@ -78,16 +89,19 @@ function onRecaptchaReset() {
 }
 
 const submitForm = async () => {
-  if (!recaptchaToken.value || !email.value) {
+  if (!recaptchaToken.value || !email.value || !description.value) {
     return;
   }
 
   isSubmitting.value = true;
 
-  const formData = new URLSearchParams();
+  const formFields = [
+      ['Email', email.value],
+      ['Field 3', description.value],
+      ['g-recaptcha-response', recaptchaToken.value]
+  ].map(([field, value]) => [`fields[${encodeURIComponent(field)}]`, value.toString()])
+  const formData = new URLSearchParams(formFields);
   formData.append('name', FORM_NAME)
-  formData.append('fields[Email]', email.value)
-  formData.append('fields[g-recaptcha-response]', recaptchaToken.value)
 
   try {
     const response = await fetch(FORM_URL, {
@@ -118,14 +132,16 @@ const submitForm = async () => {
 @import "@/assets";
 
 .form {
-  @include text-font();
-
   display: flex;
 
   &__content {
     flex-basis: 100%;
     flex-shrink: 0;
     max-width: 100%;
+  }
+
+  &__text {
+    @include text-font();
   }
 
   &__title {
