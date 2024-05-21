@@ -114,5 +114,11 @@ export default defineNuxtConfig({
   gtm: {
     id: process.env.NUXT_GTM_KEY,
     enabled: process.env.NUXT_GTM_ENABLED,
-  }
+  },
+
+  runtimeConfig: {
+    public: {
+      RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY,
+    },
+  },
 })
