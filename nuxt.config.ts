@@ -112,8 +112,8 @@ export default defineNuxtConfig({
   },
 
   gtm: {
-    id: process.env.NUXT_GTM_KEY,
-    enabled: process.env.NUXT_GTM_ENABLED,
+    id: process.env.GTM_ID,
+    enabled: process.env.GTM_ENABLED,
   },
 
   runtimeConfig: {

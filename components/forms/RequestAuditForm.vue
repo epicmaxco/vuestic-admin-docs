@@ -50,7 +50,7 @@
         @expired="onRecaptchaReset"
         @error="onRecaptchaReset"
       />
-      <VaButton class="w-full mt-3" type="submit" size="large">
+      <VaButton class="w-full mt-3 form__submitButton" type="submit" size="large">
         Submit
       </VaButton>
       <div v-if="submitError" class="form__notice form__notice--error mt-6">
@@ -141,7 +141,7 @@ const submitForm = async () => {
   }
 
   &__text {
-    @include text-font();
+    font-size: 0.9rem;
   }
 
   &__title {
@@ -156,6 +156,10 @@ const submitForm = async () => {
 
   &__notice--error {
     color: var(--va-danger);
+  }
+
+  &__submitButton {
+    --va-background-color: var(--bg-header) !important;
   }
 }
 
