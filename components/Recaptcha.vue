@@ -1,5 +1,5 @@
 <template>
-  <div ref="elementRef" />
+  <div ref="elementRef" :class="{compact}" />
 </template>
 
 <script setup lang='ts'>
@@ -10,6 +10,10 @@ const emit = defineEmits<{
   (e: "expired"): void;
   (e: "error"): void;
 }>()
+
+const breakpoint = useBreakpoint()
+
+const compact = computed(() => breakpoint.current && ['xs'].includes(breakpoint.current))
 
 const elementRef = ref<HTMLElement>();
 const widgetIdRef = ref<string>();
@@ -30,20 +34,23 @@ watchEffect(() => {
   if (recaptcha && element) {
     widgetIdRef.value = recaptcha.render(element, {
       sitekey: props.sitekey,
-    callback: (token) => {
-      emit('verified', token)
-    },
+      callback: (token) => {
+        emit('verified', token)
+      },
       'expired-callback': () => {
-      emit('expired')
-    },
+        emit('expired')
+      },
       'error-callback': () => {
-      emit('error')
-    }
+        emit('error')
+      }
     })
   }
 })
 </script>
 
-<style scoped lang='scss'>
-
+<style lang="scss" scoped>
+.compact {
+  transform: scale(0.77);
+  transform-origin: left;
+}
 </style>
