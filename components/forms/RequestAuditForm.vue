@@ -1,5 +1,5 @@
 <template>
-  <form class="form" @submit.prevent="submitForm">
+  <form ref="formRef" class="form" @submit.prevent="submitForm">
     <div v-if="formSubmitted" class="form__content">
       <h3 class="form__title">
         Thank you for reaching out!
@@ -14,8 +14,8 @@
       </div>
     </div>
     <div
-      class="form__content"
-      :class="{
+        class="form__content"
+        :class="{
         'invisible': formSubmitted,
       }"
     >
@@ -31,24 +31,24 @@
           placeholder="Email"
           required
           name="Email"
-          class="w-full mt-3"
+          class="w-full mt-3 form__input"
       />
       <VaTextarea
           v-model="description"
           placeholder="Project link, tech stack, and details"
           required
           name="Field 3"
-          class="w-full mt-3"
+          class="w-full mt-3 form__input"
           :resize="false"
-          :max-rows="4"
+          :max-rows="3"
       />
       <Recaptcha
-        ref="recaptchaRef"
-        :sitekey="RECAPTCHA_SITE_KEY"
-        class="mt-3"
-        @verified="onRecaptchaVerified"
-        @expired="onRecaptchaReset"
-        @error="onRecaptchaReset"
+          ref="recaptchaRef"
+          :sitekey="RECAPTCHA_SITE_KEY"
+          class="mt-3"
+          @verified="onRecaptchaVerified"
+          @expired="onRecaptchaReset"
+          @error="onRecaptchaReset"
       />
       <VaButton class="w-full mt-3 form__submitButton" type="submit" size="large">
         Submit
@@ -56,7 +56,7 @@
       <div v-if="submitError" class="form__notice form__notice--error mt-6">
         Oops! Something went wrong while submitting the form. Please try again or contact us directly at <a href="mailto:hello@epicmax.co" target="_new">hello@epicmax.co</a>. We're here to help and ensure your inquiry is handled promptly.
       </div>
-      <div v-else class="form__notice mt-6">
+      <div v-else class="form__notice mt-6 xs:mt-3">
         Click "Submit!" to consent to processing your data by Epicmax Georgia LLC for marketing purposes, including sending emails. For details see our <a href="https://www.iubenda.com/privacy-policy/90200659" target="_blank">Privacy Policy</a>
       </div>
     </div>
@@ -128,7 +128,7 @@ const submitForm = async () => {
 }
 </script>
 
-<style scoped lang='scss'>
+<style lang="scss" scoped>
 @import "@/assets";
 
 .form {
@@ -140,18 +140,24 @@ const submitForm = async () => {
     max-width: 100%;
   }
 
-  &__text {
+  &__text,
+  &__input {
     font-size: 0.9rem;
   }
 
   &__title {
     margin-top: 20px;
     margin-bottom: 34px;
+
+    @include xs(margin-top, 0);
+    @include xs(margin-bottom, 12px);
   }
 
   &__notice {
-    font-size: 13px;
     color: var(--va-secondary);
+    font-size: 13px;
+
+    @include xs(font-size, 10px);
   }
 
   &__notice--error {
@@ -167,5 +173,7 @@ h3 {
   @include subtitle-font();
 
   font-size: 2.5rem !important;
+
+  @include xs(font-size, 1.75rem !important);
 }
 </style>
