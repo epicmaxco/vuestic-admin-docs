@@ -58,6 +58,11 @@ defineProps({
 })
 
 const menuItems = {
+  support: {
+    to: 'https://ui.vuestic.dev/support/consulting',
+    name: 'Support & Consulting',
+    target: '_blank',
+  },
   contribute: {
     to: 'https://ui.vuestic.dev/contribution/guide',
     name: 'Contribute',

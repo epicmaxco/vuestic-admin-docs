@@ -7,6 +7,7 @@
             <b>Help</b>
             <NuxtLink class="hover:underline w-fit" to="https://github.com/epicmaxco/vuestic-admin/releases/epicmaxco/vuestic-admin" target="_blank">Report a Bug</NuxtLink>
             <NuxtLink class="hover:underline w-fit" to="https://github.com/epicmaxco/vuestic-admin/releases/vuestic-admin/releases/epicmaxco/vuestic-admin" target="_blank">Release Log</NuxtLink>
+            <NuxtLink class="hover:underline w-fit" to="https://ui.vuestic.dev/support/consulting" target="_blank">Support & Consulting</NuxtLink>
           </div>
           <div class="flex flex-col gap-3 order-2 md:order-2">
             <b>Community</b>
