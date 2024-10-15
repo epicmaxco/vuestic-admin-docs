@@ -32,7 +32,7 @@
     <section class="bg-gradient-to-b from-[#E5E3FFBA] from-[8.85%] to-[#F8F3F7] px-4 sm:px-6 md:px-0">
       <Footer />
     </section>
-    <LazyModalsRequestAuditModal v-if="needShowRequestAuditModal" v-model="showRequestAuditModal" @close="onRequestAuditModalShown" />
+    <!-- <LazyModalsRequestAuditModal v-if="needShowRequestAuditModal" v-model="showRequestAuditModal" @close="onRequestAuditModalShown" /> -->
   </template>
 </template>
 
