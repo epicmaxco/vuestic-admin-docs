@@ -18,18 +18,16 @@
       </div> -->
 
       <div class="flex md:justify-end">
-        <div class="text-regularMedium text-white justify-self-end"> Our team will be speaking at <span style="color: var(--va-warning)">MadVue</span> – The Vue.js Event in Madrid! Don’t miss it, join us!</div>
+        <a class="text-[var(--va-warning)] mr-1" href="https://epicmax.co/?utm_source=vuestic&utm_campaign=landing-banner">Need help with Vue or Nuxt?</a>
+        We build fast apps, custom UI libraries, and help you move to Vue 3 and Nuxt 3 — start with a free 2-week trial.
       </div>
       <div>
         <VaButton
-          href="https://madvue.es/?utm_source=vuestic&utm_campaign=banner"
+          href="https://calendar.app.google/nqGDauqE7kCkxExX7"
           target="_blank"
-          class="text-regularSmall"
-          size="small"
-          color="#FF0"
-          text-color="primary"
+          icon="arrow_forward"
         >
-          🎟️ Get you ticket
+          Talk to an Engineer
         </VaButton>
       </div>
     </div>
