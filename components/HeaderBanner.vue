@@ -23,7 +23,7 @@
       </div>
       <div>
         <VaButton
-          href="https://calendar.app.google/nqGDauqE7kCkxExX7"
+          href="https://calendar.app.google/XwRzASZitZRSVLxq6"
           target="_blank"
           icon="arrow_forward"
         >
