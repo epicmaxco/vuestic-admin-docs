@@ -1,7 +1,7 @@
 <template>
-  <HeaderBanner v-model="isHeaderBannerOpen" />
+  <BannerContainer v-model="isBannerOpen" :banners="bannerComponents" />
   <section class="relative bg-gradient-to-b from-[#E5E3FF] to-[#F9F4F7] px-4 sm:px-6 md:px-0">
-    <Header v-model="isMobileMenuOpen" :isHeaderBannerOpen="isHeaderBannerOpen" />
+    <Header v-model="isMobileMenuOpen" :isHeaderBannerOpen="isBannerOpen" />
     <template v-if="!isMobileMenuOpen">
       <Preview />
       <PartnersList />
@@ -37,9 +37,14 @@
 </template>
 
 <script setup lang="ts">
+import { markRaw } from 'vue'
+import ConsultBannerContent from '@/components/banners/ConsultBannerContent.vue'
+import VueConfBannerContent from '@/components/banners/VueConfBannerContent.vue'
 
 const isMobileMenuOpen = ref(false)
-const isHeaderBannerOpen = ref(true)
+const isBannerOpen = ref(true)
+
+const bannerComponents = [markRaw(VueConfBannerContent), markRaw(ConsultBannerContent)]
 
 const breakpoint = useBreakpoint()
 
